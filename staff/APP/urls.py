@@ -20,6 +20,7 @@ from APP.staffmember import views as view1
 from APP.staff import views as view2
 
 urlpatterns = [
+
     path('staffmember/', include("APP.staffmember.urls")),
     path('staff/', view2.home),
 ]

@@ -1,4 +1,14 @@
 {% extends "layout/layout.html" %}
 {% block content %}
-Home Staffmember
+<br>
+Home of Staffmember site
+<br><br><br><br>
+<p>
+<b> Environment day: </b> {% now "%B %-d, %Y %-I:%M" %}
+<br> 
+<b> Environment day: </b> {{my_date|date:"l,d F y"}}
+<br>
+<b> date: </b> {{current_date}}
+</p>
 {% endblock content %}
+ 
